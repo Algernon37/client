@@ -10,7 +10,7 @@ function JobWithWebsoket() {
 
     useEffect(() => {
         const connectWebSocket = () => {
-            const socket = new WebSocket('ws://31.128.46.75:3000/websocket');
+            const socket = new WebSocket('wss://taskforjob.ru/websocket');
             socket.onopen = () => {
                 console.log('WebSocket соединение установлено');
             };
